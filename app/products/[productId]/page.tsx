@@ -15,7 +15,9 @@ type Product = {
 };
 
 async function getProduct(id: string): Promise<Product | null> {
-  const res = await fetch(`${process.env.BASE_URL}/data.json`, { cache: "no-store" });
+  //   const res = await fetch(`${process.env.BASE_URL}/data.json`, { cache: "no-store" });
+  const res = await fetch("https://raw.githubusercontent.com/charanjose16/Car-Data/main/data.json", { cache: "no-store" });
+  
   const products: Product[] = await res.json();
   const product = products.find((p) => p.id.toString() === id);
   return product || null;
