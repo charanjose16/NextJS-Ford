@@ -1,0 +1,51 @@
+/* Full-page hero */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* full viewport height */
+    overflow: hidden; /* prevent scroll */
+    background: url('https://hips.hearstapps.com/hmg-prod/images/2021-ford-f-150-raptor-133-1637342008.jpg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Dark overlay for text readability */
+  .overlay {
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.45);
+    padding: 40px;
+    border-radius: 20px;
+  }
+  
+  /* Title */
+  .overlay h1 {
+    font-size: 64px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  }
+  
+  /* Description */
+  .overlay p {
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+  }
+  
+  /* Button */
+  .viewButton {
+    background-color: #000000;
+    color: #fff;
+    padding: 16px 32px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .viewButton:hover {
+    background-color: #00000088;
+  }
+  
